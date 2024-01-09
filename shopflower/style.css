@@ -1,0 +1,113 @@
+:root{
+    --pink: rgb(201, 15, 139);
+    --cinza: #666;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.link-btn{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.link-btn button{
+    border-radius: 5rem;
+    border: none;
+    background: #333;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+}
+
+
+.link-btn button:hover{
+    background-color: var(--pink);
+}
+
+.ul-horizontal{
+    display: flex;
+    gap: 15px;
+}
+
+ul li a{
+    text-transform: capitalize;
+    color: var(--cinza);
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+    background-color: white;
+}
+
+#nav-bar-header{
+    padding: 0 1.5rem;
+    font-size: 2rem;
+}
+
+#nav-bar-header li a:hover{
+    color: var(--pink);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(henry-co-7TzQ7l3lDAY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-home h3{
+    font-size: 6rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.conteudo-home span{
+    font-size: 3.5rem;
+    color: var(--pink);
+}
+
+.conteudo-home p{
+    font-size: 1.5rem;
+    color: #7a7474;
+    padding: 1rem 0;
+    line-height: 1.5;
+    
+}
+
+
+
+/* media queries */
+@media (max-width){
+    html{
+        font-size: 55%;
+    }
+}
